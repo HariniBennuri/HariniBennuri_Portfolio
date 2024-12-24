@@ -3,16 +3,17 @@ body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Google Font Roboto */
 }
 
 /* Global Styles */
 body {
     background-color: #f4f4f4;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     color: #333;
     margin: 0;
+    height: 100vh; /* Ensure the full viewport height for hero sections */
 }
 
 /* Header Navigation */
@@ -34,19 +35,20 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a: hover {
+nav ul li a:hover {
     color: #0056b3;
 }
 
 /* Hero Section */
 .hero-section {
-    background: url('hero.jpg') no-repeat center center/cover; /* Replace hero-image.jpg with your image file */
-    height: 100vh; /* Full viewport height */
+    background: url('hero.jpg') no-repeat center center/cover; /* Full-screen background image */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
 }
 
 .hero-content {
@@ -54,12 +56,13 @@ nav ul li a: hover {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 4rem; /* Larger font size for hero title */
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 30px;
 }
 
@@ -89,20 +92,21 @@ nav ul li a: hover {
     text-align: center;
 }
 
+/* Full-screen background images for each section */
 .about-section {
-    background: url('about.jpg') no-repeat center center/cover; /* Replace about-bg.jpg with your image file */
+    background: url('about.jpg') no-repeat center center/cover;
 }
 
 .gracekonnect-section {
-    background: url('gk.jpg') no-repeat center center/cover; /* Replace gracekonnect-bg.jpg with your image file */
+    background: url('gk.jpg') no-repeat center center/cover;
 }
 
 .techblogs-section {
-    background: url('tech.jpg') no-repeat center center/cover; /* Replace techblogs-bg.jpg with your image file */
+    background: url('tech.jpg') no-repeat center center/cover;
 }
 
 .humanside-section {
-    background: url('humanside.jpg') no-repeat center center/cover; /* Replace humanside-bg.jpg with your image file */
+    background: url('humanside.jpg') no-repeat center center/cover;
 }
 
 /* Footer */
@@ -125,10 +129,10 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Reduce font size for smaller screens */
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 1rem; /* Adjust for readability on smaller screens */
     }
 }
