@@ -3,17 +3,16 @@ body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Google Font Roboto */
+    font-family: Arial, sans-serif;
 }
 
 /* Global Styles */
 body {
     background-color: #f4f4f4;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     color: #333;
     margin: 0;
-    height: 100vh; /* Ensure full viewport height */
 }
 
 /* Header Navigation */
@@ -41,14 +40,13 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero-section {
-    background: url('hero.jpg') no-repeat center center/cover; /* Full-screen background image */
+    background: url('hero.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
 }
 
 .hero-content {
@@ -91,9 +89,11 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     height: 100vh; /* Full viewport height */
+    background-attachment: fixed;
+    background-blend-mode: overlay;
 }
 
-/* Full-screen background images for each section */
+/* Background Images */
 .about-section {
     background: url('about.jpg') no-repeat center center/cover;
 }
@@ -130,4 +130,10 @@ footer {
     }
 
     .hero-content h1 {
-        font-size
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
