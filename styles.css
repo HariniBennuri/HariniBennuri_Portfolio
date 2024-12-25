@@ -9,8 +9,8 @@ body, h1, h2, p, ul, li {
 /* Global Styles */
 body {
     background-color: #f4f4f4;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 18px; /* Increased font size */
+    line-height: 1.8; /* Improved readability */
     color: #333;
     margin: 0;
 }
@@ -54,23 +54,24 @@ nav ul li a:hover {
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: 4.5rem; /* Increased font size */
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .hero-content p {
-    font-size: 1.8rem;
+    font-size: 2rem; /* Increased font size */
     margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Larger button */
     background-color: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2rem; /* Larger button text */
     transition: background-color 0.3s ease;
 }
 
@@ -85,8 +86,8 @@ nav ul li a:hover {
 .humanside-section {
     background-size: cover;
     background-position: center;
-    padding: 80px 20px;
-    color: white;
+    padding: 100px 20px; /* Adjusted for larger font */
+    color: black; /* Default black text */
     text-align: center;
     height: 100vh; /* Full viewport height */
     background-attachment: fixed;
@@ -104,10 +105,25 @@ nav ul li a:hover {
 
 .techblogs-section {
     background: url('tech.jpg') no-repeat center center/cover;
+    color: white; /* White text for contrast with dark background */
 }
 
 .humanside-section {
     background: url('humanside.jpg') no-repeat center center/cover;
+    color: white; /* White text for contrast with dark background */
+}
+
+/* Typography */
+h1 {
+    font-size: 3.5rem; /* Increased font size for headings */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.5rem; /* Increased font size for paragraphs */
+    margin-bottom: 20px;
+    color: inherit; /* Matches the color set in the section */
 }
 
 /* Footer */
@@ -115,7 +131,8 @@ footer {
     background-color: #007bff;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    font-size: 1rem; /* Slightly larger footer text */
 }
 
 /* Responsive Design */
@@ -130,10 +147,18 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem; /* Adjusted for smaller screens */
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 1.2rem; /* Adjusted for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
     }
 }
