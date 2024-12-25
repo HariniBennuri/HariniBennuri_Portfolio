@@ -38,13 +38,74 @@ nav ul li a:hover {
     color: #0056b3;
 }
 
-/* GraceKonnect Section */
-.gracekonnect-section {
-    padding: 60px 20px; /* Reduced padding */
+/* Hero Section */
+.hero-section {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem; /* Increased font size */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 2rem; /* Increased font size */
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px; /* Larger button */
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Larger button text */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Section Backgrounds */
+.about-section,
+.gracekonnect-section,
+.techblogs-section,
+.humanside-section {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px; /* Increased padding */
+    color: black; /* Default black text for readability */
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+/* Background Images */
+.about-section {
+    background: url('about.jpg') no-repeat center center/cover;
+}
+
+.gracekonnect-section {
+    background-color: rgba(255, 255, 255, 0.7); /* White overlay for better text contrast */
+    padding: 100px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 100vh; /* Full viewport height */
 }
 
@@ -60,13 +121,13 @@ nav ul li a:hover {
 
 .gracekonnect-image {
     flex: 1;
-    max-width: 50%; /* Reduce image size */
+    max-width: 50%; /* Image takes half of the container */
 }
 
 .gracekonnect-image img {
     width: 100%; /* Ensure image scales properly */
-    max-width: 100px; /* Set a max-width for cube size */
-    height: auto; /* Ensure image adapts properly */
+    max-width: 400px; /* Set a max-width for better layout */
+    height: auto;
 }
 
 .gracekonnect-content {
@@ -96,11 +157,52 @@ nav ul li a:hover {
     padding-left: 20px;
 }
 
+/* techblogs-section */
+.techblogs-section {
+    background: url('tech.jpg') no-repeat center center/cover;
+    color: white; /* White text for contrast with dark background */
+}
+
+/* humanside-section */
+.humanside-section {
+    background: url('humanside.jpg') no-repeat center center/cover;
+    color: white; /* White text for contrast with dark background */
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem; /* Slightly larger footer text */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Adjusted for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem; /* Adjusted for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
     }
 
     .gracekonnect-container {
