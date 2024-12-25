@@ -100,41 +100,73 @@ nav ul li a:hover {
 }
 
 .gracekonnect-section {
-    background: url('gk.jpg') no-repeat center center/cover; /* Background image */
-    background-blend-mode: overlay;
     background-color: rgba(255, 255, 255, 0.7); /* White overlay for better text contrast */
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
 }
 
+.gracekonnect-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.gracekonnect-image {
+    flex: 1;
+    max-width: 50%; /* Image takes half of the container */
+}
+
+.gracekonnect-image img {
+    width: 100%; /* Ensure image scales properly */
+    max-width: 400px; /* Set a max-width for better layout */
+    height: auto;
+}
+
+.gracekonnect-content {
+    flex: 1;
+    max-width: 50%; /* Content takes the other half */
+    padding: 20px;
+}
+
+.gracekonnect-content h1 {
+    font-size: 3rem; /* Adjust the font size of the heading */
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333; /* Black text for readability on lighter background */
+}
+
+.gracekonnect-content p {
+    font-size: 1.5rem; /* Increase font size for readability */
+    margin-bottom: 20px;
+    color: #333; /* Black text for better contrast */
+}
+
+.gracekonnect-content ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* techblogs-section */
 .techblogs-section {
     background: url('tech.jpg') no-repeat center center/cover;
     color: white; /* White text for contrast with dark background */
 }
 
+/* humanside-section */
 .humanside-section {
     background: url('humanside.jpg') no-repeat center center/cover;
     color: white; /* White text for contrast with dark background */
-}
-
-/* Typography */
-.about-content h1 {
-    font-size: 3.5rem; /* Increased font size */
-    margin-bottom: 20px;
-    font-weight: 700;
-    color: black; /* Black text for readability on image background */
-}
-
-.about-content p {
-    font-size: 1.5rem; /* Increased font size */
-    margin-bottom: 20px;
-    color: black; /* Black text for readability on image background */
-}
-
-.about-content ul {
-    font-size: 1.2rem; /* Increased font size */
-    line-height: 1.8;
-    list-style-type: disc;
-    margin: 10px 0;
-    padding-left: 20px;
 }
 
 /* Footer */
@@ -171,5 +203,18 @@ footer {
 
     p {
         font-size: 1.2rem;
+    }
+
+    .gracekonnect-container {
+        flex-direction: column; /* Stack image and content vertically */
+    }
+
+    .gracekonnect-image {
+        max-width: 100%; /* Full width for mobile */
+        margin-bottom: 20px;
+    }
+
+    .gracekonnect-content {
+        max-width: 100%; /* Full width for mobile */
     }
 }
