@@ -65,7 +65,7 @@ nav ul li a:hover {
 
 .gracekonnect-image img {
     width: 100%; /* Ensure image scales properly */
-    max-width: 300px; /* Set a max-width for better layout */
+    max-width: 100px; /* Set a max-width for cube size */
     height: auto; /* Ensure image adapts properly */
 }
 
