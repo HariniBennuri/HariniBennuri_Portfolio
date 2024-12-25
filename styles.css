@@ -9,7 +9,7 @@ body, h1, h2, p, ul, li {
 /* Global Styles */
 body {
     background-color: #f4f4f4;
-    font-size: 18px; /* Increased font size */
+    font-size: 18px; /* Increased font size for global body */
     line-height: 1.8; /* Improved readability */
     color: #333;
     margin: 0;
@@ -86,8 +86,8 @@ nav ul li a:hover {
 .humanside-section {
     background-size: cover;
     background-position: center;
-    padding: 100px 20px; /* Adjusted for larger font */
-    color: black; /* Default black text */
+    padding: 100px 20px; /* Increased padding */
+    color: black; /* Default black text for readability */
     text-align: center;
     height: 100vh; /* Full viewport height */
     background-attachment: fixed;
@@ -114,16 +114,25 @@ nav ul li a:hover {
 }
 
 /* Typography */
-h1 {
-    font-size: 3.5rem; /* Increased font size for headings */
+.about-content h1 {
+    font-size: 3.5rem; /* Increased font size */
     margin-bottom: 20px;
     font-weight: 700;
+    color: black; /* Black text for readability on image background */
 }
 
-p {
-    font-size: 1.5rem; /* Increased font size for paragraphs */
+.about-content p {
+    font-size: 1.5rem; /* Increased font size */
     margin-bottom: 20px;
-    color: inherit; /* Matches the color set in the section */
+    color: black; /* Black text for readability on image background */
+}
+
+.about-content ul {
+    font-size: 1.2rem; /* Increased font size */
+    line-height: 1.8;
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
 }
 
 /* Footer */
