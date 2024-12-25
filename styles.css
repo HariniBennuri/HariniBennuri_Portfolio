@@ -100,7 +100,9 @@ nav ul li a:hover {
 }
 
 .gracekonnect-section {
-    background: url('gk.jpg') no-repeat center center/cover;
+    background: url('gk.jpg') no-repeat center center/cover; /* Background image */
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.7); /* White overlay for better text contrast */
 }
 
 .techblogs-section {
